@@ -7,7 +7,6 @@ const Search = () => {
 
 	})
 
-
 	return (
 		<div>
 			<div className="ui form">

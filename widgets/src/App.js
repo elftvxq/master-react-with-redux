@@ -20,7 +20,6 @@ const items = [
 export default () => {
 	return (
 		<div>
-			<br />
 			<Search />
 		</div>
 	)
