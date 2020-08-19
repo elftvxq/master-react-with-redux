@@ -29,7 +29,7 @@ export class SongList extends Component {
 	}
 }
 
-const mapStateToProps = (state, ownProps) => {
+const mapStateToProps = (state) => {
 	console.log(state, 'state')
 	return { songs: state.songs }
 
