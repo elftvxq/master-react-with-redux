@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Accordion from './components/Accrodion'
 import Search from './components/Search'
 import Dropdown from './components/Dropdown'
@@ -20,7 +20,7 @@ const items = [
 
 const options = [
 	{
-		label: 'The Color Red',
+		lable: 'The Color Red',
 		value: 'red'
 	},
 	{
@@ -34,9 +34,15 @@ const options = [
 ]
 
 export default () => {
+	const [selected, setSelected] = useState(options[0])
+
 	return (
 		<div>
-			<Dropdown options={options} />
+			<Dropdown
+				selected={selected}
+				onSelectedChange={setSelected}
+				options={options}
+			/>
 		</div>
 	)
 }
