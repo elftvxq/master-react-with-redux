@@ -5,7 +5,7 @@ const Convert = ({ language, text }) => {
 	const [translated, setTranslated] = useState('')
 	const [debouncedText, setdebouncedText] = useState(text)
 
-	useEffect = (() => {
+	useEffect(() => {
 		const timerId = setTimeout(() => {
 			setdebouncedText(text)
 		}, 500);
